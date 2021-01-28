@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pz1">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBnEslayMB-py1M4zRj-wtmeuCuDtGFQmY"/>
+
+        <activity android:name="com.example.PermissionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.MapActivity"
+            android:label="@string/title_activity_map"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.example.wszystkieListy" />
+        <activity android:name=".WpiszNazwe" />
+        <activity android:name="com.example.Ziola" />
+        <activity android:name="com.example.Pielegnacja" />
+        <activity android:name="com.example.Slodycze" />
+        <activity android:name="com.example.Napoje" />
+        <activity android:name="com.example.Mieso" />
+        <activity android:name="com.example.Owoce" />
+        <activity android:name="com.example.WpiszCene" />
+        <activity android:name="com.example.WyswietlListe" />
+        <activity android:name="com.example.Warzywa" />
+        <activity android:name="com.example.Pieczywo" />
+        <activity
+            android:name="com.example.listaZakupow"
+            android:fitsSystemWindows="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.example.Ilosc" />
+        <activity android:name="com.example.Nabial" />
+        <activity android:name="com.example.Kategorie" />
+        <activity android:name="com.example.MainActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+        </intent-filter></activity>
+
+    </application>
+
+</manifest>
